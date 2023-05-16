@@ -6,6 +6,7 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <SignAssembly>true</SignAssembly>
+    <PackageId>Aristocart.SQLitePCLRaw.provider.winsqlite</PackageId>
     <AssemblyOriginatorKeyFile>..\..\sn\SQLitePCLRaw.provider.winsqlite3.snk</AssemblyOriginatorKeyFile>
     <PackageDescription>SQLitePCL.raw is a Portable Class Library (PCL) for low-level (raw) access to SQLite.  Packages named 'SQLitePCLRaw.provider.*' (like this one) are 'plugins' that allow SQLitePCLRaw.core to access the native SQLite library.  This provider does DllImport of 'winsqlite3', the SQLite libary provided with Windows 10.</PackageDescription>
   </PropertyGroup>

@@ -2,7 +2,7 @@
 <!--Automatically generated-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.12">
-    <id>SQLitePCLRaw.lib.e_sqlcipher</id>
+    <id>Aristocrat.SQLitePCLRaw.lib.e_sqlcipher</id>
     <title>SQLitePCLRaw.lib.e_sqlcipher</title>
     <version>$version$</version>
     <authors>$authors$</authors>

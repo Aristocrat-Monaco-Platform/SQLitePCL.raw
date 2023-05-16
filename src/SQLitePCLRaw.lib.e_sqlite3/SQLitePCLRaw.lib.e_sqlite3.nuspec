@@ -2,7 +2,7 @@
 <!--Automatically generated-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.12">
-    <id>SQLitePCLRaw.lib.e_sqlite3</id>
+    <id>Aristocrat.SQLitePCLRaw.lib.e_sqlite3</id>
     <title>SQLitePCLRaw.lib.e_sqlite3</title>
     <version>$version$</version>
     <authors>$authors$</authors>

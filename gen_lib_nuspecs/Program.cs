@@ -80,7 +80,7 @@ public static class common
     {
         f.WriteAttributeString("minClientVersion", "2.12"); // TODO not sure this is right
 
-        f.WriteElementString("id", id);
+        f.WriteElementString("id", string.Format("Aristocrat.{0}", id));
         f.WriteElementString("title", id);
         f.WriteElementString("version", "$version$");
         f.WriteElementString("authors", "$authors$");

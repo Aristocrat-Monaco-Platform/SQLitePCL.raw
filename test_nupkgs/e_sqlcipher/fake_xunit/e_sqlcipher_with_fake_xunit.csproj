@@ -8,8 +8,8 @@
       <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="sqlitepclraw.bundle_e_sqlcipher" Version="$(pkg_version_for_testing)" />
-    <PackageReference Include="sqlitepclraw.ugly" Version="$(pkg_version_for_testing)" />
+    <PackageReference Include="aristocrat.sqlitepclraw.bundle_e_sqlcipher" Version="$(pkg_version_for_testing)" />
+    <PackageReference Include="aristocrat.sqlitepclraw.ugly" Version="$(pkg_version_for_testing)" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\src\common\attrs_for_tests.cs" />
