@@ -13,7 +13,7 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>sqlite</PackageTags>
-    <RepositoryUrl>https://github.com/ericsink/SQLitePCL.raw</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Aristocrat-Monaco-Platform/SQLitePCL.raw</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageOutputPath>$([System.IO.Path]::Combine($(MSBuildThisFileDirectory), 'nupkgs'))</PackageOutputPath>
     <cb_bin_path>$([System.IO.Path]::Combine($(MSBuildThisFileDirectory), '..', 'cb', 'bld', 'bin'))</cb_bin_path>
