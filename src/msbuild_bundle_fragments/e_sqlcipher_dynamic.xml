@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="SQLitePCLRaw.lib.e_sqlcipher" Version="$(version)" />
+	<PackageReference Include="Aristocrat.SQLitePCLRaw.lib.e_sqlcipher" Version="$(version)" />
 	<ProjectReference Include="..\SQLitePCLRaw.provider.dynamic_cdecl\SQLitePCLRaw.provider.dynamic_cdecl.csproj" />
   </ItemGroup>
 

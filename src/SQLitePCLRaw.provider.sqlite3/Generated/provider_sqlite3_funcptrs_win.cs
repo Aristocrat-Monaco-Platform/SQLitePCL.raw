@@ -64,6 +64,11 @@ namespace SQLitePCL
             }
         }
 
+        void ISQLite3Provider.set_mirror_dir(string directory)
+        {
+            NativeMethods.set_mirror_dir(directory);
+        }
+
         unsafe int ISQLite3Provider.sqlite3_open(utf8z filename, out IntPtr db)
         {
             fixed (byte* p = filename)
@@ -1946,6 +1951,9 @@ namespace SQLitePCL
 
 		[DllImport(SQLITE_DLL, ExactSpelling=true, CallingConvention = CALLING_CONVENTION)]
 		public static extern unsafe int sqlite3_keyword_name(int i, out byte* name, out int length);
+
+		[DllImport(SQLITE_DLL, ExactSpelling=true, CallingConvention = CALLING_CONVENTION)]
+		public static extern unsafe void set_mirror_dir(string dir);
 
 	}
 

@@ -139,6 +139,11 @@ namespace SQLitePCL
 #>
         }
 
+        void ISQLite3Provider.set_mirror_dir(string directory)
+        {
+            NativeMethods.set_mirror_dir(directory);
+        }
+
         unsafe int ISQLite3Provider.sqlite3_open(utf8z filename, out IntPtr db)
         {
             fixed (byte* p = filename)
@@ -3151,7 +3156,13 @@ namespace SQLitePCL
                 new Parm("int", "length").SetIsOut(true),
             }
             ),
-
+        new Function(
+            "void",
+            "set_mirror_dir",
+            new Parm[] {
+                new Parm("string", "dir"),
+            }
+            ),
 
         };
 

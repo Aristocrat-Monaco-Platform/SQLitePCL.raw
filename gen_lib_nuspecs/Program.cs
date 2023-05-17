@@ -386,42 +386,29 @@ public static class gen
     {
         write_nuspec_file_entry_native_win(lib, win_toolset, "plain", "x86", "win-x86", f);
         write_nuspec_file_entry_native_win(lib, win_toolset, "plain", "x64", "win-x64", f);
-        write_nuspec_file_entry_native_win(lib, win_toolset, "plain", "arm", "win-arm", f);
-        write_nuspec_file_entry_native_win(lib, win_toolset, "plain", "arm64", "win-arm64", f);
 
-        write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "arm64", "win10-arm64", f);
-        write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "arm", "win10-arm", f);
         write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "x64", "win10-x64", f);
         write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "x86", "win10-x86", f);
 
-        write_nuspec_file_entry_native_mac(lib, "x86_64", "osx-x64", f);
-        write_nuspec_file_entry_native_mac(lib, "arm64", "osx-arm64", f);
-
-        write_nuspec_file_entry_native_maccatalyst(lib, "x86_64", "maccatalyst-x64", f);
-        write_nuspec_file_entry_native_maccatalyst(lib, "arm64", "maccatalyst-arm64", f);
-
-        write_nuspec_file_entry_native_linux(lib, "x64", "linux-x64", f);
-        write_nuspec_file_entry_native_linux(lib, "x86", "linux-x86", f);
-        write_nuspec_file_entry_native_linux(lib, "armhf", "linux-arm", f);
-        write_nuspec_file_entry_native_linux(lib, "armsf", "linux-armel", f);
-        write_nuspec_file_entry_native_linux(lib, "arm64", "linux-arm64", f);
+        //write_nuspec_file_entry_native_linux(lib, "x64", "linux-x64", f);
+        //write_nuspec_file_entry_native_linux(lib, "x86", "linux-x86", f);
+        //write_nuspec_file_entry_native_linux(lib, "armhf", "linux-arm", f);
+        //write_nuspec_file_entry_native_linux(lib, "armsf", "linux-armel", f);
+        //write_nuspec_file_entry_native_linux(lib, "arm64", "linux-arm64", f);
 
         // TODO seems sad to put two copies of each musl, one for linux-musl- RID and one for alpine- RID
-        write_nuspec_file_entry_native_linux(lib, "musl-x64", "linux-musl-x64", f);
-        write_nuspec_file_entry_native_linux(lib, "musl-armhf", "linux-musl-arm", f);
-        write_nuspec_file_entry_native_linux(lib, "musl-arm64", "linux-musl-arm64", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-x64", "linux-musl-x64", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-armhf", "linux-musl-arm", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-arm64", "linux-musl-arm64", f);
 
         // TODO seems sad to put two copies of each musl, one for linux-musl- RID and one for alpine- RID
-        write_nuspec_file_entry_native_linux(lib, "musl-x64", "alpine-x64", f);
-        write_nuspec_file_entry_native_linux(lib, "musl-armhf", "alpine-arm", f);
-        write_nuspec_file_entry_native_linux(lib, "musl-arm64", "alpine-arm64", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-x64", "alpine-x64", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-armhf", "alpine-arm", f);
+        //write_nuspec_file_entry_native_linux(lib, "musl-arm64", "alpine-arm64", f);
 
-        write_nuspec_file_entry_native_linux(lib, "mips64", "linux-mips64", f);
-        write_nuspec_file_entry_native_linux(lib, "s390x", "linux-s390x", f);
-	write_nuspec_file_entry_native_linux(lib, "ppc64le", "linux-ppc64le", f);
-
-        write_nuspec_file_entry_native_wasm(lib, TFM.NET60, f);
-        write_nuspec_file_entry_native_wasm(lib, TFM.NET70, f);
+        //write_nuspec_file_entry_native_linux(lib, "mips64", "linux-mips64", f);
+        //write_nuspec_file_entry_native_linux(lib, "s390x", "linux-s390x", f);
+	    //write_nuspec_file_entry_native_linux(lib, "ppc64le", "linux-ppc64le", f);
     }
 
     static void write_nuspec_wasm_targets_file_entry(
@@ -471,7 +458,7 @@ public static class gen
 
             f.WriteStartElement("files");
 
-            write_nuspec_file_entries_from_cb(WhichLib.E_SQLITE3, "v142", f);
+            write_nuspec_file_entries_from_cb(WhichLib.E_SQLITE3, "v143", f);
 
 #if not
             {
@@ -571,7 +558,7 @@ public static class gen
 
             f.WriteStartElement("files");
 
-            write_nuspec_file_entries_from_cb(WhichLib.E_SQLCIPHER, "v142", f);
+            write_nuspec_file_entries_from_cb(WhichLib.E_SQLCIPHER, "v143", f);
 
             {
                 var tname = string.Format("{0}.targets", id);
