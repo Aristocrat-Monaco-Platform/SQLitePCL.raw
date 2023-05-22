@@ -139,9 +139,9 @@ namespace SQLitePCL
 #>
         }
 
-        void ISQLite3Provider.set_mirror_dir(string directory)
+        void ISQLite3Provider.set_mirror_directory(string directory)
         {
-            NativeMethods.set_mirror_dir(directory);
+            NativeMethods.set_mirror_directory(directory);
         }
 
         unsafe int ISQLite3Provider.sqlite3_open(utf8z filename, out IntPtr db)
@@ -3158,9 +3158,9 @@ namespace SQLitePCL
             ),
         new Function(
             "void",
-            "set_mirror_dir",
+            "set_mirror_directory",
             new Parm[] {
-                new Parm("string", "dir"),
+                new Parm("string", "slave_dir"),
             }
             ),
 

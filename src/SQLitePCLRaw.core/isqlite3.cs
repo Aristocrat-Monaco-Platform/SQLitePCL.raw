@@ -277,7 +277,7 @@ namespace SQLitePCL
 		int sqlite3_keyword_count();
 		int sqlite3_keyword_name(int i, out string name);
 
-        void set_mirror_dir(string directory);
+        void set_mirror_directory(string directory);
     }
 }
 

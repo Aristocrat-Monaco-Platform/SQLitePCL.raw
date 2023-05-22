@@ -69,9 +69,9 @@ namespace SQLitePCL
             }
         }
 
-        void ISQLite3Provider.set_mirror_dir(string directory)
+        void ISQLite3Provider.set_mirror_directory(string directory)
         {
-            NativeMethods.set_mirror_dir(directory);
+            NativeMethods.set_mirror_directory(directory);
         }
 
         unsafe int ISQLite3Provider.sqlite3_open(utf8z filename, out IntPtr db)
@@ -1706,7 +1706,7 @@ namespace SQLitePCL
 			sqlite3_create_function_v2 = (MyDelegateTypes.sqlite3_create_function_v2) Load(gf, typeof(MyDelegateTypes.sqlite3_create_function_v2));
 			sqlite3_keyword_count = (MyDelegateTypes.sqlite3_keyword_count) Load(gf, typeof(MyDelegateTypes.sqlite3_keyword_count));
 			sqlite3_keyword_name = (MyDelegateTypes.sqlite3_keyword_name) Load(gf, typeof(MyDelegateTypes.sqlite3_keyword_name));
-			set_mirror_dir = (MyDelegateTypes.set_mirror_dir) Load(gf, typeof(MyDelegateTypes.set_mirror_dir));
+			set_mirror_directory = (MyDelegateTypes.set_mirror_directory) Load(gf, typeof(MyDelegateTypes.set_mirror_directory));
 		}
 
 		public static MyDelegateTypes.sqlite3_close sqlite3_close;
@@ -1860,7 +1860,7 @@ namespace SQLitePCL
 		public static MyDelegateTypes.sqlite3_create_function_v2 sqlite3_create_function_v2;
 		public static MyDelegateTypes.sqlite3_keyword_count sqlite3_keyword_count;
 		public static MyDelegateTypes.sqlite3_keyword_name sqlite3_keyword_name;
-		public static MyDelegateTypes.set_mirror_dir set_mirror_dir;
+		public static MyDelegateTypes.set_mirror_directory set_mirror_directory;
 	[UnmanagedFunctionPointer(CALLING_CONVENTION)]
 	public delegate void callback_log(IntPtr pUserData, int errorCode, IntPtr pMessage);
 
@@ -2371,7 +2371,7 @@ namespace SQLitePCL
 		public unsafe delegate int sqlite3_keyword_name(int i, out byte* name, out int length);
 
 		[UnmanagedFunctionPointer(CALLING_CONVENTION)]
-		public unsafe delegate void set_mirror_dir(string dir);
+		public unsafe delegate void set_mirror_directory(string slave_dir);
 
 	}
 

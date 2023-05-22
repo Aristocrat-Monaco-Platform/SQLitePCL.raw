@@ -1495,9 +1495,9 @@ namespace SQLitePCL
 			return Provider.sqlite3_keyword_name(i, out name);
 		}
 
-        static public void set_mirror_dir(string directory)
+        static public void set_mirror_directory(string directory)
         {
-            Provider.set_mirror_dir(directory);
+            Provider.set_mirror_directory(directory);
         }
     }
 }
