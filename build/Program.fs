@@ -117,7 +117,7 @@ let main argv =
     let bat = System.Collections.Generic.List<string>()
     for s in Directory.GetFiles(dir_nupkgs, "*.nupkg") do
         let fname = Path.GetFileName(s)
-        let line = sprintf ".\\nuget push %s -Source https://api.nuget.org/v3/index.json -ApiKey %%1" fname
+        let line = sprintf ".\\nuget push %s -Source https://nuget.pkg.github.com/Aristocrat-Monaco-Platform/index.json -ApiKey %%1" fname
         bat.Add(line)
     File.WriteAllLines(Path.Combine(dir_nupkgs, "push.bat"), bat)
 

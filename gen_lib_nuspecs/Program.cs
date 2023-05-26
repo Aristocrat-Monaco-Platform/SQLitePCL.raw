@@ -81,7 +81,7 @@ public static class common
         f.WriteAttributeString("minClientVersion", "2.12"); // TODO not sure this is right
 
         f.WriteElementString("id", string.Format("Aristocrat.{0}", id));
-        f.WriteElementString("title", id);
+        f.WriteElementString("title", string.Format("Aristocrat.{0}", id));
         f.WriteElementString("version", "$version$");
         f.WriteElementString("authors", "$authors$");
         f.WriteElementString("copyright", "$copyright$");
@@ -89,7 +89,7 @@ public static class common
         write_license(f);
         f.WriteStartElement("repository");
         f.WriteAttributeString("type", "git");
-        f.WriteAttributeString("url", "https://github.com/ericsink/SQLitePCL.raw");
+        f.WriteAttributeString("url", "https://github.com/Aristocrat-Monaco-Platform/SQLitePCL.raw");
         f.WriteEndElement(); // repository
         f.WriteElementString("summary", "$summary$");
         f.WriteElementString("tags", PACKAGE_TAGS);
@@ -711,24 +711,6 @@ public static class gen
             write_nuget_target_item("win-x86", lib, f);
             write_nuget_target_item("win-x64", lib, f);
             write_nuget_target_item("win-arm", lib, f);
-            f.WriteEndElement(); // ItemGroup
-
-            f.WriteStartElement("ItemGroup");
-            f.WriteAttributeString("Condition", " '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Unix' AND Exists('/Library/Frameworks') ");
-            // TODO in what case does this make sense?
-            write_nuget_target_item("osx-x64", lib, f);
-            f.WriteEndElement(); // ItemGroup
-
-            f.WriteStartElement("ItemGroup");
-            f.WriteAttributeString("Condition", " '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Unix' AND !Exists('/Library/Frameworks') ");
-            write_nuget_target_item("linux-x86", lib, f);
-            write_nuget_target_item("linux-x64", lib, f);
-            write_nuget_target_item("linux-arm", lib, f);
-            write_nuget_target_item("linux-armel", lib, f);
-            write_nuget_target_item("linux-arm64", lib, f);
-            write_nuget_target_item("linux-x64", lib, f);
-            write_nuget_target_item("linux-mips64", lib, f);
-            write_nuget_target_item("linux-s390x", lib, f);
             f.WriteEndElement(); // ItemGroup
 
             f.WriteEndElement(); // Project

@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.12">
     <id>Aristocrat.SQLitePCLRaw.lib.e_sqlite3</id>
-    <title>SQLitePCLRaw.lib.e_sqlite3</title>
+    <title>Aristocrat.SQLitePCLRaw.lib.e_sqlite3</title>
     <version>$version$</version>
     <authors>$authors$</authors>
     <copyright>$copyright$</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">Apache-2.0</license>
-    <repository type="git" url="https://github.com/ericsink/SQLitePCL.raw" />
+    <repository type="git" url="https://github.com/Aristocrat-Monaco-Platform/SQLitePCL.raw" />
     <summary>$summary$</summary>
     <tags>sqlite;xamarin</tags>
     <description>This package contains platform-specific native code builds of SQLite for use with SQLitePCLRaw.  To use this, you need SQLitePCLRaw.core as well as one of the SQLitePCLRaw.provider.* packages.  Convenience packages are named SQLitePCLRaw.bundle_*.</description>

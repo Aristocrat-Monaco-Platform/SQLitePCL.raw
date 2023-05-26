@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.12">
     <id>Aristocrat.SQLitePCLRaw.lib.e_sqlcipher</id>
-    <title>SQLitePCLRaw.lib.e_sqlcipher</title>
+    <title>Aristocrat.SQLitePCLRaw.lib.e_sqlcipher</title>
     <version>$version$</version>
     <authors>$authors$</authors>
     <copyright>$copyright$</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">Apache-2.0</license>
-    <repository type="git" url="https://github.com/ericsink/SQLitePCL.raw" />
+    <repository type="git" url="https://github.com/Aristocrat-Monaco-Platform/SQLitePCL.raw" />
     <summary>$summary$</summary>
     <tags>sqlite;xamarin</tags>
     <description>This package contains platform-specific native code builds of SQLCipher (see sqlcipher/sqlcipher on GitHub) for use with SQLitePCLRaw.  Note that these sqlcipher builds are unofficial and unsupported.  For official sqlcipher builds, contact Zetetic.  To use this package, you need SQLitePCLRaw.core as well as one of the SQLitePCLRaw.provider.* packages.  Convenience packages are named SQLitePCLRaw.bundle_*.</description>
