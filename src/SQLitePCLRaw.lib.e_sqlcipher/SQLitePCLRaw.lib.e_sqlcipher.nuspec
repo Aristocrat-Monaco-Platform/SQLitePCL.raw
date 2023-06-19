@@ -19,6 +19,8 @@
     <file src="$cb_bin_path$\e_sqlcipher\win\v143\plain\x64\e_sqlcipher.dll" target="runtimes\win-x64\native\e_sqlcipher.dll" />
     <file src="$cb_bin_path$\e_sqlcipher\win\v143\appcontainer\x64\e_sqlcipher.dll" target="runtimes\win10-x64\nativeassets\uap10.0\e_sqlcipher.dll" />
     <file src="$cb_bin_path$\e_sqlcipher\win\v143\appcontainer\x86\e_sqlcipher.dll" target="runtimes\win10-x86\nativeassets\uap10.0\e_sqlcipher.dll" />
+    <file src="$cb_bin_path$\e_sqlcipher\linux\x64\libe_sqlcipher.so" target="runtimes\linux-x64\native\libe_sqlcipher.so" />
+    <file src="$cb_bin_path$\e_sqlcipher\linux\x86\libe_sqlcipher.so" target="runtimes\linux-x86\native\libe_sqlcipher.so" />
     <file src=".\net461\SQLitePCLRaw.lib.e_sqlcipher.targets" target="buildTransitive\net461" />
     <file src=".\net6.0\SQLitePCLRaw.lib.e_sqlcipher.targets" target="buildTransitive\net6.0" />
     <file src=".\net7.0\SQLitePCLRaw.lib.e_sqlcipher.targets" target="buildTransitive\net7.0" />
