@@ -390,8 +390,8 @@ public static class gen
         write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "x64", "win10-x64", f);
         write_nuspec_file_entry_native_uwp(lib, win_toolset, "appcontainer", "x86", "win10-x86", f);
 
-        //write_nuspec_file_entry_native_linux(lib, "x64", "linux-x64", f);
-        //write_nuspec_file_entry_native_linux(lib, "x86", "linux-x86", f);
+        write_nuspec_file_entry_native_linux(lib, "x64", "linux-x64", f);
+        write_nuspec_file_entry_native_linux(lib, "x86", "linux-x86", f);
         //write_nuspec_file_entry_native_linux(lib, "armhf", "linux-arm", f);
         //write_nuspec_file_entry_native_linux(lib, "armsf", "linux-armel", f);
         //write_nuspec_file_entry_native_linux(lib, "arm64", "linux-arm64", f);
